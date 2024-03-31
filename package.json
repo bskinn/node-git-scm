@@ -2,9 +2,14 @@
   "name": "@bskinn/git-scm",
   "version": "0.1.0",
   "description": "Generates release-modification-based version numbers from the git tree and tags",
+  "type": "module",
   "main": "dist/index.js",
+  "types": "dist/types/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write src/ ./*.json",
+    "format-check": "prettier -l src/ ./*.json"
   },
   "repository": {
     "type": "git",
