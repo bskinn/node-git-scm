@@ -1,1 +1,1 @@
-export { buildGitVersion } from './git-scm.js'
+export { buildGitVersion } from './git-scm-version.js'
