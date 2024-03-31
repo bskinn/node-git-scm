@@ -1,2 +1,2 @@
 # node-git-scm
-Generates release-modification-based version numbers from the git tree and tags
+Generates change-based version build numbers from the git tree and tags
