@@ -13,7 +13,9 @@ type TTagDistanceSpec = {
 export async function buildGitVersion(): Promise<string> {
   const git = simpleGit()
 
+  // TODO: Generalize this to SemVer or CalVer
   const tagList: Array<string> = (await git.tag())
+    .trim()
     .split('\n')
     .filter((t) => t.match(/^v\d{4}[.]\d{1,2}[.]\d{2}[.]\d+/))
 
