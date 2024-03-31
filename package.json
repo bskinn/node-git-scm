@@ -1,5 +1,5 @@
 {
-  "name": "git-scm",
+  "name": "@bskinn/git-scm",
   "version": "0.1.0",
   "description": "Generates release-modification-based version numbers from the git tree and tags",
   "main": "dist/index.js",
