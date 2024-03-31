@@ -1,4 +1,4 @@
-import SimpleGit from 'simple-git'
+import { simpleGit } from 'simple-git'
 
 type TTagCountSpec = {
   tag: string
@@ -11,7 +11,7 @@ type TTagDistanceSpec = {
 }
 
 export async function buildGitVersion(): Promise<string> {
-  const git = SimpleGit.simpleGit()
+  const git = simpleGit()
 
   const tagList: Array<string> = (await git.tag())
     .split('\n')
